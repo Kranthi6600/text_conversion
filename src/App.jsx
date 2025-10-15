@@ -11,7 +11,7 @@ function App() {
   const [mode, setMode] = useState('dark')
 
   return (
-    <Router>
+    <Router basename='/text_conversion'>
       <Navbar mode={mode}/>
       <Routes>
         <Route path='/' element={<Home />} />
