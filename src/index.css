@@ -1,0 +1,73 @@
+body {
+  background-color: black !important;
+  color: white !important;
+}
+
+#textArea::placeholder {
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.home,
+.about {
+  transition: color .3s ease-in-out;
+  font-size: medium !important;
+}
+
+.home:hover,
+.about:hover {
+  cursor: pointer;
+  color: rgba(201, 194, 194, 0.794) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+#preview {
+  border-radius: 15px;
+  max-width: fit-content;
+  padding: 20px;
+  border: 1px solid rgba(233, 233, 233, 0.612);
+  box-shadow: 0px 0px 14px 0px rgba(181, 176, 176, 0.628);
+}
+
+.enlarge {
+  text-align: center;
+  opacity: .6;
+}
+
+.message {
+  opacity: 1;
+  transform: opacity 0.5s ease-in-out;
+  animation: fadeInOut 3.5s ease-in-out forwards;
+  
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
